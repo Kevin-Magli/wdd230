@@ -1,0 +1,115 @@
+:root {
+    --header-background: #4E0707;
+    --global-hover: #ff0000;
+}
+
+h1, h2 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 600;
+}
+p, a, li {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 400;
+}
+
+header {
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--header-background);
+    color: white;
+    font-size: 2.5rem;
+    font-size: large;
+}
+
+#profile {
+    width: 70px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 10%;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 20px 0 20px;   
+    padding: 2%;
+}
+nav a:hover {
+    color: var(--global-hover);
+    text-decoration: underline;
+}
+main h1 {
+    text-align: center;
+    font-size: 1.3rem;   
+}
+.solid {
+    border: none;
+    border-top: 1px solid rgb(185, 185, 185); 
+    width: 85%;
+    margin: -5px auto;
+    margin-bottom: 20px;
+}
+.card {
+    background-color: white;
+    display: flexbox;
+    border: 1px solid rgb(185, 185, 185);
+    margin: 10px;
+    border-radius: 10px;
+}
+.card h2 {
+    background-color: var(--header-background);
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px;
+    margin-top: 0px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+ul {
+    list-style-type: none; 
+}
+#location, #weather, #visits {
+    text-align: center;
+    font-size: 1rem;
+    margin: 15px;
+}
+footer {
+    background-color: var(--header-background);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.adress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#copyright, #author {
+    margin-bottom: auto;
+}
+#flag {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    
+}
+#updated {
+    font-size: 0.8rem;
+    color: yellow;
+    margin-top: auto;
+}

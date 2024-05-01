@@ -1,0 +1,33 @@
+/* this will be the css that will only be activated when we are not in mobile screen size, thus altering the aspect ratio of the page. */
+@media screen and (min-width: 500px) {
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 0;
+    }
+    footer {
+        background-color: var(--header-background);
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    .adress, #copyright, #author {
+        padding-right: 10px;
+        margin-bottom: 20px;
+    }
+    #updated {
+        display: block;
+        position: fixed;
+        bottom: 0;
+    }
+}
