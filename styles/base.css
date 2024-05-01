@@ -22,7 +22,11 @@ header {
     font-size: 2.5rem;
     font-size: large;
 }
-
+header span {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
 #profile {
     width: 70px;
     height: 80px;
