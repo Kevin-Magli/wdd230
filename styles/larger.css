@@ -1,4 +1,3 @@
-/* this will be the css that will only be activated when we are not in mobile screen size, thus altering the aspect ratio of the page. */
 @media screen and (min-width: 500px) {
 
     nav {
