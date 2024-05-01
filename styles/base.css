@@ -91,7 +91,6 @@ footer {
     flex-direction: column;
     text-align: center;
     padding: 2px;
-    position: sticky;
     left: 0;
     bottom: 0;
     width: 100%;
