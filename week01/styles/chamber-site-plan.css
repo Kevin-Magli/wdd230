@@ -1,0 +1,81 @@
+:root {
+    --background-color: rgb(235, 250, 246);
+    --primary-color: #8ecae6;
+    --secondary-color: #219ebc;
+    --accent1-color: #023047;
+    --accent2-color: #ffb703;
+    --accent3-color: #fb8500;
+    --heading-weight: 400;
+
+
+}
+
+#primary {
+    color: black;
+    background-color: var(--primary-color);
+    border: 1px solid black;
+}
+
+#secondary {
+    color: black;
+    background-color: var(--secondary-color);
+    border: 1px solid black;
+}
+
+#accent {
+    color: white;
+    background-color: var(--accent1-color);
+    border: 1px solid black;
+
+}   
+
+#accent2 {
+    color: black;
+    background-color: var(--accent2-color);
+    border: 1px solid black;
+}
+
+#accent3 {
+    color: black;
+    background-color: var(--accent3-color);
+    border: 1px solid black;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--accent1-color);
+}
+h3 ,h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: var(--accent2-color);
+}
+h4 {
+    color: var(--accent3-color);
+}
+
+p, a, li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+body {
+    background-color: var(--background-color);
+    text-align: center;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 20px;
+}
+
+header {
+    /* Center text in header */
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
