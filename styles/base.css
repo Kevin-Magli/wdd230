@@ -119,3 +119,10 @@ footer {
     color: yellow;
     margin-top: auto;
 }
+
+.active ::before {
+	content: "♦";
+    margin-right: 5px;
+    color: red;
+    text-shadow: 0 0 5px red;
+}
