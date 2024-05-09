@@ -168,8 +168,9 @@ nav a.active::before {
 }
 
 #dark {
-    position: fixed;
+    position: absolute;
     right: 0;
+    top: 10px;
     margin: 15px;
     font-size:2rem;
     border: 0;
