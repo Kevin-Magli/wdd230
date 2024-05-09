@@ -51,6 +51,7 @@ header span {
     left: 0;
     top: 25px;
     padding: 15px;
+    cursor: pointer;
 }
 #menu::before {
     content: "☰";
