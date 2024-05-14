@@ -164,23 +164,7 @@ footer {
     color: yellow;
     margin-top: auto;
 }
-
-
-
-/* <Button class="ham-menu">
-    <span></span>
-    <span></span>
-    <span></span>
-</Button>
-<nav>
-    <a href="#">Home</a>
-    <a href="#">Discover</a>
-    <a href="#">Sales</a>
-    <a href="#">Events</a>
-    <a href="#">Jobs & Business</a>
-    <a href="#">About</a>
-</nav> */
-
+/* Hamburger menu */
 nav {
     background-color: rgb(34,37,49);
     opacity: .9;
