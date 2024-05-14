@@ -34,7 +34,12 @@ header h1 {
     -1px -1px 0 #000,  
      1px -1px 0 #000,
     -1px  1px 0 #000,
-     1px  1px 0 #000; 
+     1px  1px 0 #000;
+    background-color: #023047;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 1.5rem;
 }
 .action {
     display: flex;
