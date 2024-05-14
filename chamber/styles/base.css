@@ -253,18 +253,6 @@ nav a:hover {
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* Colors, decorations and stuff */
 body {
     background-color: var(--background-color);
@@ -284,4 +272,3 @@ p, a {
 .action button {
     background-color: var(--accent2-color);
 }
-
