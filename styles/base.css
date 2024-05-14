@@ -96,7 +96,6 @@ main h1 {
     border: 1px solid rgb(185, 185, 185);
     margin: 10px;
     border-radius: 10px;
-
 }
 .card h2 {
     background-color: var(--header-background);
