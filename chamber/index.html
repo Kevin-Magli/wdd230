@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBC Chamber - Home</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Kevin Magli - WDD 230 - SBC Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="placeholder.jpg">
+    <meta property="og:url" content="https://kevinmagli.github.io/">
+</head>
+<body>
+    <Button class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </Button>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Discover</a>
+        <a href="#">Sales</a>
+        <a href="#">Events</a>
+        <a href="#">Jobs & Business</a>
+        <a href="#">About</a>
+    </nav>
+    <main>
+        <header>
+            <img id="logo" src="images/logo.png" alt="SBC Chamber logo">
+            <h1>SBC Chamber</h1>
+        </header>
+        <img id="hero" src="images/sbc-hero.webp" alt="Hero Image Placeholder">
+        <div class="action">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab incidunt quaerat quas quibusdam dolor ratione deleniti nesciunt neque maiores nisi exercitationem facilis, enim eligendi. Exercitationem minus inventore magni earum asperiores?</p>
+            <Button>Call to Action</Button>
+        </div>
+        <div class="event">
+            <h2>Current Event</h2>
+            <img src="https://via.placeholder.com/700x400" alt="Current Event Placeholder">
+        </div>
+        <h2>Visit our sections!</h2>
+        <div class="grid-container">
+            <a href="#" class="card">
+                <p>Sales</p>
+            </a>
+            <a href="#" class="card">
+                <p>Discover</p>
+            </a>
+            <a href="#"  class="card">
+                <p>More Events</p>
+            </a>
+            <a href="#" class="card">
+                <p>Jobs & Business</p>
+            </a>
+            <a href="#" class="card">
+                <p>About</p>
+            </a>
+        </div>
+        <div class="banner">
+            <h2>Weather</h2>
+            <p>some degrees in SBC</p>
+            <img src="https://via.placeholder.com/800x200" alt="Current Weather Placeholder">
+        </div>
+        <div class="banner">
+            <h2>Company Spotlight 1</h2>
+            <img src="https://via.placeholder.com/800x200" alt="Company Spotlight 1 Placeholder">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="year"></span> Kevin Magliocchi - WDD 230</p>
+        <p>Social Media:  <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">X</a></p>
+        <p>Last Modification: <span id="lastMod"></span></p>
+    </footer>
+
+    <script src="../scripts/getDates.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+:root {
+    --background-color: rgb(235, 250, 246);
+    --primary-color: #8ecae6;
+    --secondary-color: #219ebc;
+    --accent1-color: #023047;
+    --accent2-color: #ffb703;
+    --accent3-color: #fb8500;
+    --heading-weight: 400;
+}
+
+@media screen and (min-width: 500px) {
+    .ham-menu {
+        display: none;
+    }
+    nav, nav a {
+        all: unset;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: var(--accent1-color);
+        color: white;
+        font-size: 1.3rem;
+        padding: 10px;
+        padding-right: 25px;
+
+    }
+    nav a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    header {
+        padding-top: 90px;
+    }
+    #logo {
+        width: 150px;
+    }
+    #hero {
+        max-height: 50vh;
+    }
+   .event  {
+    max-width: 50%;
+   }
+   .grid-container {
+       max-width: 50%;
+   }
+}
