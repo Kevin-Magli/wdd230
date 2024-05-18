@@ -31,8 +31,7 @@ header span {
     font-size: 2rem;
 }
 #profile {
-    width: 70px;
-    height: 80px;
+    width: 80px;
     margin: 20px;
     border-radius: 10%;
 }
@@ -89,8 +88,8 @@ main h1 {
     margin: -5px auto;
     margin-bottom: 20px;
 }
+
 .card {
-    /* background-color: white; */
     display: flex;
     flex-direction: column;
     border: 1px solid rgb(185, 185, 185);
@@ -154,15 +153,7 @@ nav a.active::before {
     text-shadow: 0 0 5px red;
 }
 
-/* .active ::before {
-	content: "♦";
-    margin-right: 5px;
-    color: red;
-    text-shadow: 0 0 5px red;
-} */
-
 .hero picture img {
-    /* max-width: 960px; */
     margin: 0 auto;
     display: block;
 }
@@ -189,6 +180,9 @@ nav a.active::before {
     content: "☼";
 }
 
+.hero {
+    position: relative;
+}
 .hero img {
     width: 80%;
     height: auto;
@@ -197,4 +191,19 @@ nav a.active::before {
 }
 .hero img.active {
     background-image: url("images/hero-large-dark.webp");
+}
+.hero h2 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 10px black;
+}
+#map {
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
 }

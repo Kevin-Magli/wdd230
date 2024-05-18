@@ -14,9 +14,14 @@
         background-color: black;
     }
     .cards-container {
+        display: flex;
+        padding: 0 30px;
+    }
+    .cards-container {
         display: grid;
         grid-template-columns: 1.5fr 1fr;
         gap: 0;
+        padding: 0 30px;
     }
     footer {
         background-color: var(--header-background);

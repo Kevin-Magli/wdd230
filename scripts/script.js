@@ -20,8 +20,11 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
   document.body.style.backgroundColor = '#1E1E1E';
   document.body.style.color = '#D4D4D4';
   document.querySelectorAll('a').forEach(link => {
-    link.style.color = '#3498db';
+    link.style.color = '#30cfff';
   });
+  sourceSmall.srcset = 'images/hero-small-dark.webp';
+  sourceMedium.srcset = 'images/hero-medium-dark.webp';
+  hero.src = 'images/hero-large-dark.webp';
 }
 
 // button config
@@ -33,7 +36,7 @@ darkButton.addEventListener('click', () => {
     document.body.style.backgroundColor = '#1E1E1E';
     document.body.style.color = '#D4D4D4';
     document.querySelectorAll('a').forEach(link => {
-      link.style.color = '#3498db';
+      link.style.color = '#30cfff';
     })
     sourceSmall.srcset = 'images/hero-small-dark.webp';
     sourceMedium.srcset = 'images/hero-medium-dark.webp';
