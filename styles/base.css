@@ -189,3 +189,12 @@ nav a.active::before {
     content: "☼";
 }
 
+.hero img {
+    width: 80%;
+    height: auto;
+    border-radius: 30px;
+    padding-top: 10px;
+}
+.hero img.active {
+    background-image: url("images/hero-large-dark.webp");
+}

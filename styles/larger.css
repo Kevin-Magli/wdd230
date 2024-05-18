@@ -37,4 +37,9 @@
         margin-top: 40px;
         
     }
+    .hero img {
+        width: 40%;
+        height: auto;
+        padding-top: 10px;
+    }
 }
