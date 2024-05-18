@@ -109,7 +109,7 @@ main h1 {
 ul {
     list-style-type: none; 
 }
-#location, #weather, #visits {
+.card p {
     text-align: center;
     font-size: 1rem;
     margin: 15px;

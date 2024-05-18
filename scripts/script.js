@@ -52,3 +52,17 @@ darkButton.addEventListener('click', () => {
     hero.src = 'images/hero-large.webp';
   }
 })
+
+function updateVisitCount() {
+  let visitCount = localStorage.getItem('visits');
+
+  if (visitCount === null) {
+    visitCount = 0;
+  } else {
+    visitCount = parseInt(visitCount);
+  }
+  visitCount++;
+  localStorage.setItem('visits', visitCount);
+  document.getElementById('visits').textContent = visitCount;
+} 
+updateVisitCount();
