@@ -68,8 +68,12 @@
         </section>
         <section class="card">
           <h2>Information</h2>
-          <p id="location">Location, Bigger Location</p>
-          <p id="weather">-the weather-</p>
+          
+          <div id="weather">
+            <div id="weather-icon"></div>
+            <div id="temp"></div>
+            <div id="condition"></div>
+          </div>
           <p>Number of visits: <span id="visits">0</span></p>
         </section>
       </div>
@@ -85,6 +89,7 @@
       <p id="updated">Last Modification: <span id="lastMod"></span></p>
     </footer>
 
+    <script src="/scripts/weather.js"></script>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/script.js"></script>
   </body>

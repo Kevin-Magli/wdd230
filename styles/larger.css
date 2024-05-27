@@ -45,4 +45,60 @@
         height: auto;
         padding-top: 10px;
     }
+
+    /* discover css */
+    
+    .sidebar {
+        position: relative;
+        float: left;
+        top: 0;
+        left: 0;
+        max-width: 300px;
+    }
+    .feed {
+        position: relative;
+        float: left;
+        top: 0;
+        margin-left: 10px;
+        left: calc(35% - 250px);
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 500px;
+    }
+    .post-container {
+        margin-bottom: 50px;
+        background-color: rgb(13, 0, 58);
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .post-container h3, .post-container p, .post-container img {
+        text-align: center;
+    }
+    .interactions button {
+        background: none;
+        background-color: black;
+    } 
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    .sidebar {
+        display: relative;
+        margin: 0 auto;
+        float: none;
+        width: 500px;
+        border-bottom-left-radius: 10px;
+    }
+    .feed {
+        position: relative;
+        float: none;
+        top: 0;
+        margin: 0 auto;
+        left: 0;
+        max-width: 90%;
+    }
 }
