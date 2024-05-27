@@ -92,6 +92,9 @@
         left: 0;
         max-width: 300px;
     }
+    .events p{
+        margin: 20px;
+    }
     .feed {
         position: relative;
         float: left;
@@ -112,7 +115,7 @@
         justify-content: center;
         width: 100%;
     }
-    .post-container:hover {
+    .post-container img:hover {
         /* make it grow a little bigger when the mouse hovers over it */
         transform: scale(1.02);
         transition: 0.5s;
@@ -122,28 +125,22 @@
     }
     #discover-logo {
         display: flex;
-        flex-direction: row;
-        position: absolute;
-        left: 10px;
+        flex-direction: column;
+        position: relative;
         top: 0;
-        padding-bottom: 10px;
     }
     #discover-logo img {
-        width: 30px;
-        margin-top: 10px;
+        width: 50px;
+        margin-top: 20px;
     }
-    #discover-logo p {
+    #discover-logo h3 {
         font-size: 1.3rem;
-        padding-left: 50px; 
-        margin-top: 15px;
-        margin-left: 3px;
-        color: white;
+        padding-left: 30px; 
     }
 }
 
     @media screen and (min-width: 500px) and (max-width: 800px) {
     .sidebar {
-        display: relative;
         margin: 0 auto;
         float: none;
         width: 500px;
