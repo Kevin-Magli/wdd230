@@ -81,4 +81,80 @@
    footer a:hover {
        text-decoration: underline;
    }
+
+   
+   /* discover css */
+    
+   .sidebar {
+        position: relative;
+        float: left;
+        top: 0;
+        left: 0;
+        max-width: 300px;
+    }
+    .feed {
+        position: relative;
+        float: left;
+        top: 0;
+        margin-left: 10px;
+        left: calc(35% - 250px);
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 500px;
+    }
+    .post-container {
+        margin-bottom: 50px;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .post-container:hover {
+        /* make it grow a little bigger when the mouse hovers over it */
+        transform: scale(1.02);
+        transition: 0.5s;
+    }
+    .post-container h3, .post-container p, .post-container img {
+        text-align: center;
+    }
+    #discover-logo {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        left: 10px;
+        top: 0;
+        padding-bottom: 10px;
+    }
+    #discover-logo img {
+        width: 30px;
+        margin-top: 10px;
+    }
+    #discover-logo p {
+        font-size: 1.3rem;
+        padding-left: 50px; 
+        margin-top: 15px;
+        margin-left: 3px;
+        color: white;
+    }
+}
+
+    @media screen and (min-width: 500px) and (max-width: 800px) {
+    .sidebar {
+        display: relative;
+        margin: 0 auto;
+        float: none;
+        width: 500px;
+        border-bottom-left-radius: 10px;
+    }
+    .feed {
+        position: relative;
+        float: none;
+        top: 0;
+        margin: 0 auto;
+        left: 0;
+        max-width: 90%;
+    }
 }
