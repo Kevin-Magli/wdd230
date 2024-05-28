@@ -349,9 +349,9 @@ p, a {
 #discover-logo img{
     width: 50px;
     margin-top: 20px;
-    margin-bottom: -20px;
+    margin-bottom: 0;
 }
-#discover-logo h3 {
+#discover-logo h1 {
     font-size: 1.5rem;
     color: var(--accent1-color);
 }
