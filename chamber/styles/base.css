@@ -456,3 +456,8 @@ p, a {
     background-color: #f7d000;
     color: black;
 }
+#thankyou-page .message {
+    text-align: center;
+    padding: 150px;
+    background: linear-gradient(90deg, var(--background-color) 0%, #fffcd8 100%);
+}
