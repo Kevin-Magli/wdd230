@@ -8,6 +8,18 @@
     --heading-weight: 400;
 }
 /* font montserrat */
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: var(--secondary-color);
+}
+
 #hero {
     position: absolute;
     top: 0;
@@ -40,6 +52,7 @@ header h1 {
     border-radius: 10px;
     margin: 10px;
     font-size: 1.5rem;
+    text-align: center;
 }
 .action {
     display: flex;
@@ -96,7 +109,6 @@ main h2 {
 }
 .card {
     background-color: var(--primary-color);
-    /* make a material border to this cards */
     border: 1px solid black;
     padding: 10px;
     border-radius: 10px;
@@ -203,6 +215,9 @@ nav a {
 }
 nav a:hover {
     text-decoration: underline;
+}
+nav a:visited {
+    color: white;
 }
 
 
@@ -354,4 +369,90 @@ p, a {
 #discover-logo h1 {
     font-size: 1.5rem;
     color: var(--accent1-color);
+}
+
+/* Style for Join page */
+#join-page form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 70%;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    color: white;
+    margin-top: 20px;
+}
+#join-page .item {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+}
+#join-page .item input, .item textarea {
+    height: 30px;
+    width: 100%;
+    background-color: var(--primary-color);
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#join-page .item label {
+    background-color: #023047;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#join-page #org-description {
+    height: 100px;
+}
+#join-page #required {
+    color: var(--accent2-color);
+}
+#join-page input[type="submit"] {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: gray;
+    color: white;
+}
+#join-page form:valid input[type="submit"] {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+}
+#join-page #timestamp {
+    border-radius: 5px;
+    background-color: var(--accent2-color);
+    color: black;
+}
+#join-page table {
+    margin: 0 auto;
+    border: solid #000;
+    width: 80%;
+    padding: 10px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#join-page th,
+#join-page td {
+    border: solid #000 1px;
+    padding: 5px;
+    text-align: left;
+}
+#join-page tr:nth-child(1) {
+    background-color: var(--accent1-color);
+    color: white;
+}
+#join-page tr:nth-child(2) {
+    background-color: var(--primary-color);
+}
+#join-page tr:nth-child(3) {
+    background-color: #d4914d;
+    color: black;
+}
+#join-page tr:nth-child(4) {
+    background-color: silver;
+}
+#join-page tr:nth-child(5) {
+    background-color: #f7d000;
+    color: black;
 }

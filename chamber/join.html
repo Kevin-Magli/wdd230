@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBC Chamber of Commerce - Join</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="description" content="Kevin Magliocchi's WDD 230 - SBC Chamber of Commerce course assignment portal.">
+    <meta name="author" content="Kevin Magliocchi">
+    <meta property="og:title" content="Kevin Magli - WDD 230 - SBC Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/sbc-hero.webp">
+    <meta property="og:url" content="https://kevinmagli.github.io/">
+</head>
+<body onload="setTimestamp()">
+    <Button class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </Button>
+    <nav>
+        <a href="index">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="#">Sales</a>
+        <a href="#">Events</a>
+        <a href="#">Jobs & Business</a>
+        <a href="#">About</a>
+    </nav>
+    <main id="join-page">
+        <header>
+            <img id="logo" src="images/logo.png" alt="SBC Chamber logo">
+            <h1>SBC Chamber of Commerce</h1>
+        </header>
+        <img id="hero" src="images/sbc-hero.webp" alt="Hero Image Placeholder">
+        <div class="join-grid-container">
+            <div class="form-background">
+                <form action="thankyou.html" method="post">
+                    <div class="item">
+                        <label id="required" for="first-name">*First Name: </label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                
+                    <div class="item">
+                        <label id="required" for="last-name">*Last Name: </label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                 
+                    <div class="item">
+                        <label id="required" for="email">*Email Address: </label>
+                        <input type="email" id="email" name="email" placeholder="Ex: abcde@gmail.com..." required>
+                    </div>
+                    
+                    <div class="item">
+                        <label for="position">Title or Position: </label>
+                        <input type="text" id="position" name="position" pattern="[^\s-]{7,}$">
+                    </div>
+    
+                    <div class="item">
+                        <label id="required" for="mobile-phone">*Mobile Phone: </label>
+                        <input type="tel" id="mobile-phone" name="mobile-phone" required>
+                    </div>
+                
+                    <div class="item">
+                        <label for="organization">Business/Organization Name: </label>
+                        <input type="text" name="organization" id="organization">
+                    </div>
+                
+                    <div class="item">
+                        <label for="level">Membership Level: </label>
+                        <input type="select" list="member-levels" name="level" id="level" placeholder="See table for information">
+                        <datalist id="member-levels">
+                            <option value="NP Membership">
+                            <option value="Bronze">
+                            <option value="Silver">
+                            <option value="Gold">
+                        </datalist>
+                    </div>
+                
+                    <div class="item">
+                        <label for="org-description">Business/Organization Description: </label>
+                        <textarea name="org-description" id="org-description"></textarea>
+                    </div>
+                
+                    <div class="item">
+                        <label id="timestamp" for="timestamp">Time: </label>
+                        <input type="hidden" name="timestamp" id="timestamp">
+                    </div>
+                
+                    <div class="item">
+                        <input type="submit">
+                    </div>
+                </form>
+            </div>
+            
+            
+    
+            <table>
+                <tr>
+                    <th>Membership Level</th>
+                    <th>Price (year)</th>
+                    <th>Benefits</th>
+                </tr>
+                <tr>
+                    <td>NP(Non-Profit)</td>
+                    <td>free!</td>
+                    <td>Basic membership with access to community events and resources.</td>
+                </tr>
+                <tr>
+                    <td>Bronze</td>
+                    <td>$50</td>
+                    <td>Includes basic benefits plus access to special events and discounts on services.</td>
+                </tr>
+                <tr>
+                    <td>Silver</td>
+                    <td>$100</td>
+                    <td>Includes Bronze benefits plus additional training sessions and priority access to events.</td>
+                </tr>
+                <tr>
+                    <td>Gold</td>
+                    <td>$200</td>
+                    <td>Includes Silver benefits plus premium advertising options and exclusive event opportunities and discounts.</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> Kevin Magliocchi - WDD 230</p>
+        <p>Social Media:  <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">X</a></p>
+        <p> Contact Information: <a href="chamber.SBC@gmail.com">Email</a> | <a href="#">Phone: +55 11 3218-1923</a> | <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj1i7W91a6GAxXfrJUCHYqkC7cQ8gF6BAgnEAI&url=%2Fmaps%2Fplace%2FPra%25C3%25A7a%2BSamuel%2BSabatini%2B-%2BVila%2BMarchi%2C%2BS%25C3%25A3o%2BBernardo%2Bdo%2BCampo%2B-%2BSP%2C%2B09810-390%2Fdata%3D!4m2!3m1!1s0x94ce42338fed5499%3A0x194ef44477df4860%3Fsa%3DX%26ved%3D1t%3A242%26ictx%3D111&usg=AOvVaw0tKgEkNbd-EasjBJimTiub&opi=89978449">Address: Praça Samuel Sabatini, S/N - Centro, São Bernardo do Campo - SP, 09810-390</a></p>
+        <p id="updated">Last Modification: <span id="lastMod"></span></p>
+    </footer>
+
+    <script src="../scripts/getDates.js"></script>
+    <script src="scripts/join-script.js"></script>
+</body>
+</html>
