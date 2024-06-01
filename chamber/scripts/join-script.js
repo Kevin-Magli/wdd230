@@ -1,8 +1,7 @@
 function setTimestamp() {
-    var timestampField = document.getElementById('timestamp');
+    var timestampField = document.getElementsById('timestamp');
     var now = new Date();
-    timestampField.textContent = "Time started: " + now.toLocaleString();
-
+    timestampField.value = "Started: " + now.toLocaleString();
 }
 
 // var submitButton = document.querySelector('input[type="submit"]');

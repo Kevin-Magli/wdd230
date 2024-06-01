@@ -372,6 +372,7 @@ p, a {
 }
 
 /* Style for Join page */
+
 #join-page form {
     display: flex;
     flex-direction: column;
@@ -419,9 +420,10 @@ p, a {
     color: var(--accent1-color);
 }
 #join-page #timestamp {
-    border-radius: 5px;
+    /* border-radius: 5px;
     background-color: var(--accent2-color);
-    color: black;
+    color: black; */
+    background: none;
 }
 #join-page table {
     margin: 0 auto;
