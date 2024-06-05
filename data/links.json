@@ -1,0 +1,55 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url":"week01/holygrail.html",
+                    "title": "Holy Grail"
+                },
+                {
+                    "url":"week01/media-query.html",
+                    "title": "Media Query"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url":"week02/design.html",
+                    "title": "Design Principles"
+                },
+                {
+                    "url":"https://codepen.io/Kevin-Magli/pen/oNOrJKJ",
+                    "title": "Active Page Codepen"
+                },
+                {
+                    "url":"week02/bom.html",
+                    "title": "BOM Top 10"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url":"week03/images/landscape-tiny.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url":"week03/lazyload.html",
+                    "title": "Lazy Load"
+                },
+                {
+                    "url":"week03/responsive-images.html",
+                    "title": "Responsive Images"
+                },
+                {
+                    "url":"week03/bom.html",
+                    "title": "BOM Top 10 but it remembers items when you f5"
+                }
+            ]
+        }
+    ]
+}
