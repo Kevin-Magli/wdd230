@@ -69,7 +69,6 @@ if (darkButton) {
 // visit count for index page
 
 const siteKey = document.title;
-const welcomeKey = document.getElementById('welcome-visitor');
 function updateVisitCount() {
   let visitCountKey = 'visits_' + location.hostname + '_' + siteKey; 
   let visitCount = localStorage.getItem(visitCountKey);
@@ -84,63 +83,44 @@ function updateVisitCount() {
   if (document.getElementById('visits')) {
     document.getElementById('visits').textContent = visitCount;
   }
-  if (welcomeKey) {
-    updateWelcome();
-  } 
   console.log(visitCount);
 }
 
 
-function updateWelcome() {
-  let visitCountKey = 'visits_' + location.hostname + '_welcome'; 
-  let lastVisitDateKey = 'lastVisit_' + location.hostname + '_welcome';
-  let visitCount = localStorage.getItem(visitCountKey);
-  let fullDay = new Date();
+const baseURL = "https://kevin-magli.github.io/wdd230/";
+const linksURL = "https://kevin-magli.github.io/wdd230/data/links.json";
 
-  if (visitCount === null) {
-    visitCount = 0;
+async function getLinks() {
+  const response = await fetch(linksURL);
+  if (response.ok) {
+    const data = await response.json();
+    console.log(data);
+    displayLinks(data);
   } else {
-    visitCount = parseInt(visitCount);
+    console.error('Error: ' + response.statusText);
   }
-  visitCount++;  
-  localStorage.setItem(visitCountKey, visitCount);
-
-  let lastVisitDate = localStorage.getItem(lastVisitDateKey);
-  if (lastVisitDate !== null) {
-    let timeBetweenVisits = fullDay.getTime() - new Date(lastVisitDate).getTime();
-    let daysBetweenVisits = Math.ceil(timeBetweenVisits / (1000 * 60 * 60 * 24));
-
-    if (visitCount > 1) {
-      if (lastVisitDate !== null) {
-        let timeBetweenVisits = fullDay.getTime() - new Date(lastVisitDate).getTime();
-        let daysBetweenVisits = Math.ceil(timeBetweenVisits / (1000 * 60 * 60 * 24));
-    
-        if (daysBetweenVisits < 1) {
-          console.log("Back so soon! Awesome!");
-        } else {
-          document.getElementById('welcome-visitor').textContent = ("You last visited " + daysBetweenVisits + " day" + (daysBetweenVisits > 1 ? "s" : "") + " ago.");
-        }
-      }
-    }
-  }
-  // Update the last visit date
-  localStorage.setItem(lastVisitDateKey, fullDay.toISOString());
-
-  console.log(visitCount);
-  console.log(fullDay);
 }
 
 
+function displayLinks(data) {
+  const container = document.getElementById('links-container');
+  container.innerHTML = '';
 
+  data.weeks.forEach(week => {
+    const weekHeader = document.createElement('h3');
+    weekHeader.textContent = week.week;
 
+    const linksText = week.links.map(link => `<a href="${baseURL + link.url}">${link.title}</a>`).join(' | ');
 
+    const weekLinks = document.createElement('p');
+    weekLinks.innerHTML = linksText;
 
-
-updateWelcome();
-
-
-
-
+    container.appendChild(weekHeader);
+    container.appendChild(weekLinks);
+  });
+}
 
 
 updateVisitCount();
+
+getLinks();
