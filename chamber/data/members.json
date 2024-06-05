@@ -1,0 +1,96 @@
+{
+    "companies": [
+      {
+        "name": "Tech Innovators Inc.",
+        "info": [
+          {
+            "address": "Rua dos Inovadores, 123, São Paulo, SP, 01000-000",
+            "phone": "(11) 5555-1234",
+            "website": "https://www.techinnovators.com",
+            "image": "tech-innovators.png",
+            "membership_level": "Gold",
+            "additional_info": "Leading tech solutions provider"
+          }
+        ]
+      },
+      {
+        "name": "Green Energy Solutions",
+        "info": [
+          {
+            "address": "Avenida Sustentável, 456, Rio de Janeiro, RJ, 20000-000",
+            "phone": "(11) 5555-2345",
+            "website": "https://www.greenenergy.com",
+            "image": "green-energy.png",
+            "membership_level": "Silver",
+            "additional_info": "Sustainable energy company"
+          }
+        ]
+      },
+      {
+        "name": "HealthFirst Medical",
+        "info": [
+          {
+            "address": "Rua da Saúde, 789, Belo Horizonte, MG, 30000-000",
+            "phone": "(11) 5555-3456",
+            "website": "https://www.healthfirst.com",
+            "image": "healthfirst-medical.png",
+            "membership_level": "Bronze",
+            "additional_info": "Healthcare and medical services"
+          }
+        ]
+      },
+      {
+        "name": "EduTech Academy",
+        "info": [
+          {
+            "address": "Avenida do Conhecimento, 101, Brasília, DF, 70000-000",
+            "phone": "(11) 5555-4567",
+            "website": "https://www.edutechacademy.com",
+            "image": "edutech-academy.png",
+            "membership_level": "NP",
+            "additional_info": "Non-profit educational institution"
+          }
+        ]
+      },
+      {
+        "name": "Gourmet Delights",
+        "info": [
+          {
+            "address": "Rua dos Gourmets, 202, Curitiba, PR, 80000-000",
+            "phone": "(11) 5555-5678",
+            "website": "https://www.gourmetdelights.com",
+            "image": "gourmet-delights.png",
+            "membership_level": "Silver",
+            "additional_info": "Specialty foods and catering"
+          }
+        ]
+      },
+      {
+        "name": "Urban Development Group",
+        "info": [
+          {
+            "address": "Avenida Urbana, 303, Porto Alegre, RS, 90000-000",
+            "phone": "(11) 5555-6789",
+            "website": "https://www.urbandevgroup.com",
+            "image": "urban-development.png",
+            "membership_level": "Gold",
+            "additional_info": "Real estate and urban planning"
+          }
+        ]
+      },
+      {
+        "name": "Creative Arts Studio",
+        "info": [
+          {
+            "address": "Rua dos Artistas, 404, Florianópolis, SC, 88000-000",
+            "phone": "(11) 5555-7890",
+            "website": "https://www.creativearts.com",
+            "image": "creative-arts.png",
+            "membership_level": "Bronze",
+            "additional_info": "Art and design services"
+          }
+        ]
+      }
+    ]
+  }
+  
