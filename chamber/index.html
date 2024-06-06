@@ -15,7 +15,7 @@
     <meta name="author" content="Kevin Magliocchi">
     <meta property="og:title" content="Kevin Magli - WDD 230 - SBC Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="images/sbc-hero.webp">
+    <meta property="og:image" content="https://kevinmagli.github.io/wdd230/images/sbc-hero.webp">
     <meta property="og:url" content="https://kevinmagli.github.io/">
 </head>
 <body>
@@ -25,27 +25,33 @@
         <span></span>
     </Button>
     <nav>
-        <a href="index">Home</a>
+        <a id="currentLocation" href="index">Home</a>
         <a href="discover.html">Discover</a>
-        <a href="#">Sales</a>
-        <a href="#">Events</a>
-        <a href="#">Jobs & Business</a>
         <a href="join.html">Join Us</a>
+        <a href="directory.html">Members</a>
     </nav>
     <main>
         <header>
             <img id="logo" src="images/logo.png" alt="SBC Chamber logo">
-            <h1>SBC Chamber of Commerce</h1>
+            <h1>SBC Chamber of Commerce - Home</h1>
         </header>
         <img id="hero" src="images/sbc-hero.webp" alt="Hero Image Placeholder">
         <div class="action">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab incidunt quaerat quas quibusdam dolor ratione deleniti nesciunt neque maiores nisi exercitationem facilis, enim eligendi. Exercitationem minus inventore magni earum asperiores?</p>
-            <Button>Call to Action</Button>
+            <p>Come join the biggest and most heart warming community of São Bernardo do Campo and not only be part of the Chamber but receive many benefits through our memberships!</p>
+            <div id="cta">
+                <a href="join.html">Join Now!!</a>
+            </div>
         </div>
+        <div id="attend-meet">
+            <h2>Chamber of Commerce Meet</h2>
+            <p>Every Monday, Tuesday and Wednesday at 7pm</p>
+            <a href="#">Click here to attend!</a>
+        </div>
+        <h2>Current Event</h2>
         <div class="event">
-            <h2>Current Event</h2>
-            <img src="https://via.placeholder.com/700x400" alt="Current Event Placeholder">
+            <img src="images/event.webp" alt="Current Event picture">
         </div>
+        <p id="event-p">Kid's City Park 50% off during weekends!</p>
         <h2>Visit our sections!</h2>
         <div class="grid-container">
             <a href="#" class="card">
@@ -66,13 +72,28 @@
         </div>
         <div class="banner-grid">
             <div class="banner">
-                <h2>Weather</h2>
-                <p>some degrees in SBC</p>
-                <img src="https://via.placeholder.com/800x200" alt="Current Weather Placeholder">
+                <h2>Weather information</h2>
+                <div id="weather">
+                    <figure>
+                      <img id="weather-icon" src="" alt="weather icon">
+                      <div id="weather-condition"></div>
+                    </figure>
+                    <div id="weather-temp"></div>
+                    <div id="next-3-days"></div>
+                </div>
+                <img class="background" src="images/weather-background.webp" alt="Current Weather Placeholder">
             </div>
             <div class="banner">
-                <h2>Company Spotlight 1</h2>
-                <img src="https://via.placeholder.com/800x200" alt="Company Spotlight 1 Placeholder">
+                <div class="spotlight">
+                    <h2>Company Spotlights</h2>
+                    <div id="company-spotlight-1"></div>
+                </div>
+                <div class="spotlight">
+                    <div id="company-spotlight-2"></div>
+                </div>
+                <div class="spotlight">
+                    <div id="company-spotlight-3"></div>
+                </div>
             </div>
         </div>
         
@@ -80,12 +101,14 @@
     <footer>
         <p>&copy;<span id="year"></span> Kevin Magliocchi - WDD 230</p>
         <p>Social Media:  <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">X</a></p>
-        <p> Contact Information: <a href="chamber.SBC@gmail.com">Email</a> | <a href="#">Phone: +55 11 3218-1923</a> | <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj1i7W91a6GAxXfrJUCHYqkC7cQ8gF6BAgnEAI&url=%2Fmaps%2Fplace%2FPra%25C3%25A7a%2BSamuel%2BSabatini%2B-%2BVila%2BMarchi%2C%2BS%25C3%25A3o%2BBernardo%2Bdo%2BCampo%2B-%2BSP%2C%2B09810-390%2Fdata%3D!4m2!3m1!1s0x94ce42338fed5499%3A0x194ef44477df4860%3Fsa%3DX%26ved%3D1t%3A242%26ictx%3D111&usg=AOvVaw0tKgEkNbd-EasjBJimTiub&opi=89978449">Address: Praça Samuel Sabatini, S/N - Centro, São Bernardo do Campo - SP, 09810-390</a></p>
+        <p> Contact Information: <a href="#">Email: chamber.SBC@gmail.com</a> | <a href="#">Phone: +55 11 3218-1923</a> | <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj1i7W91a6GAxXfrJUCHYqkC7cQ8gF6BAgnEAI&url=%2Fmaps%2Fplace%2FPra%25C3%25A7a%2BSamuel%2BSabatini%2B-%2BVila%2BMarchi%2C%2BS%25C3%25A3o%2BBernardo%2Bdo%2BCampo%2B-%2BSP%2C%2B09810-390%2Fdata%3D!4m2!3m1!1s0x94ce42338fed5499%3A0x194ef44477df4860%3Fsa%3DX%26ved%3D1t%3A242%26ictx%3D111&usg=AOvVaw0tKgEkNbd-EasjBJimTiub&opi=89978449">Address: Praça Samuel Sabatini, S/N - Centro, São Bernardo do Campo - SP, 09810-390</a></p>
         <p id="updated">Last Modification: <span id="lastMod"></span></p>
     </footer>
 
     <script src="../scripts/weather.js"></script>
     <script src="../scripts/getDates.js"></script>
     <script src="scripts/script.js"></script>
+    <script src="scripts/spotlight.js"></script>
+
 </body>
 </html>

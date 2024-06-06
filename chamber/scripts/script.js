@@ -8,7 +8,6 @@ hamMenu.addEventListener('click', () => {
 })
 
 
-
 function updateWelcome() {
   // Define keys for storing visit count and last visit date
   let visitCountKey = 'visits_' + location.hostname + '_welcome';
@@ -73,4 +72,22 @@ function updateWelcome() {
 }
 
 
-updateWelcome();
+document.addEventListener('DOMContentLoaded', function() {
+  var attendMeetBanner = document.getElementById('attend-meet');
+  if (attendMeetBanner) {
+    var today = new Date().getDay(); // Get the current day (0 = Sunday, 1 = Monday, ...)
+    console.log(today);
+
+    if (today >= 1 && today <= 3) { // Show the banner on Monday, Tuesday, and Wednesday
+      attendMeetBanner.style.display = 'block';
+      console.log('Banner shown successfully.');
+    } else {
+      attendMeetBanner.style.display = 'none';
+      console.log('Banner hidden successfully.');
+    }
+  } else {
+    console.log('Attend meet banner element not found.');
+  }
+});
+
+

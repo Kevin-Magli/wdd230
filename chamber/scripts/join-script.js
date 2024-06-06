@@ -1,13 +1,7 @@
-function setTimestamp() {
-    var timestampField = document.getElementsById('timestamp');
-    var now = new Date();
-    timestampField.value = "Started: " + now.toLocaleString();
-}
+document.getElementById('myForm').addEventListener('submit', function(event) {
+    // Prevent the default form submission
+    event.preventDefault();
 
-// var submitButton = document.querySelector('input[type="submit"]');
-// submitButton.addEventListener('click', (event) => {
-//     if (!validateForm()) {
-//         event.preventDefault();
-//         alert('Please fill out all required fields.');
-//     }
-// });
+    // Redirect to another page
+    window.location.href = 'thankyou.html';
+});
