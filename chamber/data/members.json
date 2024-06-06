@@ -7,7 +7,7 @@
             "address": "Rua dos Inovadores, 123, São Paulo, SP, 01000-000",
             "phone": "(11) 5555-1234",
             "website": "https://www.techinnovators.com",
-            "image": "tech-innovators.png",
+            "image": "tech-innovators.webp",
             "membership_level": "Gold",
             "additional_info": "Leading tech solutions provider"
           }
@@ -20,7 +20,7 @@
             "address": "Avenida Sustentável, 456, Rio de Janeiro, RJ, 20000-000",
             "phone": "(11) 5555-2345",
             "website": "https://www.greenenergy.com",
-            "image": "green-energy.png",
+            "image": "green-energy.webp",
             "membership_level": "Silver",
             "additional_info": "Sustainable energy company"
           }
@@ -33,7 +33,7 @@
             "address": "Rua da Saúde, 789, Belo Horizonte, MG, 30000-000",
             "phone": "(11) 5555-3456",
             "website": "https://www.healthfirst.com",
-            "image": "healthfirst-medical.png",
+            "image": "healthfirst-medical.webp",
             "membership_level": "Bronze",
             "additional_info": "Healthcare and medical services"
           }
@@ -46,7 +46,7 @@
             "address": "Avenida do Conhecimento, 101, Brasília, DF, 70000-000",
             "phone": "(11) 5555-4567",
             "website": "https://www.edutechacademy.com",
-            "image": "edutech-academy.png",
+            "image": "edutech-academy.webp",
             "membership_level": "NP",
             "additional_info": "Non-profit educational institution"
           }
@@ -59,7 +59,7 @@
             "address": "Rua dos Gourmets, 202, Curitiba, PR, 80000-000",
             "phone": "(11) 5555-5678",
             "website": "https://www.gourmetdelights.com",
-            "image": "gourmet-delights.png",
+            "image": "gourmet-delights.webp",
             "membership_level": "Silver",
             "additional_info": "Specialty foods and catering"
           }
@@ -72,7 +72,7 @@
             "address": "Avenida Urbana, 303, Porto Alegre, RS, 90000-000",
             "phone": "(11) 5555-6789",
             "website": "https://www.urbandevgroup.com",
-            "image": "urban-development.png",
+            "image": "urban-development.webp",
             "membership_level": "Gold",
             "additional_info": "Real estate and urban planning"
           }
@@ -85,7 +85,7 @@
             "address": "Rua dos Artistas, 404, Florianópolis, SC, 88000-000",
             "phone": "(11) 5555-7890",
             "website": "https://www.creativearts.com",
-            "image": "creative-arts.png",
+            "image": "creative-arts.webp",
             "membership_level": "Bronze",
             "additional_info": "Art and design services"
           }
