@@ -73,18 +73,4 @@ function updateWelcome() {
 }
 
 
-
-
-
-
-
-
-
-
 updateWelcome();
-
-
-
-
-
-

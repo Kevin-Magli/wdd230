@@ -463,3 +463,51 @@ p, a {
     padding: 150px;
     background: linear-gradient(90deg, var(--background-color) 0%, #fffcd8 100%);
 }
+/* directory page */
+#view-switcher {
+    background: none;
+    border: none;
+    font-size: 2.3rem;
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--accent3-color);
+    width: 50px;
+    height: 50px;
+}
+#view-switcher:hover {
+    background-color:black;
+    color: var(--accent3-color);
+}
+#members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 20px;
+}
+#members > div{
+    background-color: var(--primary-color);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    flex: 1 0 80%;
+    max-width: 80%;
+    box-sizing: border-box;
+}
+#members img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 50%; 
+}
+#members a {
+    color: var(--accent1-color);
+}
